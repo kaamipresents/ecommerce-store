@@ -12,8 +12,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="p-2 bg-emerald-600 rounded-xl group-hover:rotate-12 transition-transform duration-300">
-                <Package className="w-6 h-6 text-white" />
+              <div className="relative w-10 h-10 overflow-hidden rounded-xl group-hover:rotate-12 transition-transform duration-300">
+                <img 
+                  src="/logo.png" 
+                  alt="FreshKeep Logo" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="text-2xl font-bold tracking-tight text-slate-900 font-display">
                 FreshKeep

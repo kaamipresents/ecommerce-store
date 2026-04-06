@@ -35,11 +35,15 @@ export const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between relative">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group transition-all duration-300">
-          <div className="p-2.5 bg-slate-900 rounded-2xl group-hover:bg-emerald-600 group-hover:rotate-6 transition-all duration-300 shadow-lg shadow-slate-200">
-            <Package className="w-6 h-6 text-white" />
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="relative w-10 h-10 overflow-hidden rounded-xl group-hover:rotate-12 transition-transform duration-300">
+            <img 
+              src="/logo.png" 
+              alt="FreshKeep Logo" 
+              className="w-full h-full object-cover"
+            />
           </div>
-          <span className="text-2xl font-black tracking-tight text-slate-900 font-display">
+          <span className="text-2xl font-bold tracking-tight text-slate-900 font-display">
             FreshKeep
           </span>
         </Link>
@@ -90,8 +94,12 @@ export const Navbar = () => {
       >
         <div className="flex items-center justify-between px-6 py-6 border-b border-slate-100">
           <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3">
-             <div className="p-2 bg-slate-900 rounded-xl">
-               <Package className="w-5 h-5 text-white" />
+             <div className="relative w-8 h-8 overflow-hidden rounded-lg">
+               <img 
+                 src="/logo.png" 
+                 alt="FreshKeep Logo" 
+                 className="w-full h-full object-cover"
+               />
              </div>
              <span className="text-xl font-black text-slate-900 font-display">FreshKeep</span>
           </Link>

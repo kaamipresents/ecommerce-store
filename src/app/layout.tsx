@@ -18,6 +18,10 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "FreshKeep | Premium Food Storage Solutions",
   description: "Keep your food fresher, longer with our premium airtight storage containers. Organized, sustainable, and stylish kitchen solutions.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

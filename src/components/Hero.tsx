@@ -19,7 +19,7 @@ export const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-10 animate-fade-in">
-            <h1 className="text-5xl md:text-8xl font-black font-display leading-[0.95] text-slate-900 tracking-tight">
+            <h1 className="text-5xl md:text-8xl font-black font-display leading-[0.95] text-slate-900 tracking-tight mt-8 md:mt-12">
               Keep Food <br />
               <span className="text-gradient">Fresher, Longer.</span>
             </h1>
