@@ -13,7 +13,9 @@ interface ProductCardProps {
 }
 
 export const ProductCard = ({ product, onQuickView }: ProductCardProps) => {
-  const whatsappLink = generateWhatsAppLink(product.name, product.price);
+  const currentOrigin = typeof window !== "undefined" ? window.location.origin : "";
+  const productUrl = `${currentOrigin}/products/${product.slug}`;
+  const whatsappLink = generateWhatsAppLink(product.name, product.price, productUrl);
 
   return (
     <div className="group bg-white rounded-[2.5rem] p-5 transition-all duration-500 hover:shadow-[0_40px_80px_-20px_rgba(16,185,129,0.1)] border border-slate-100 flex flex-col h-full animate-fade-in relative overflow-hidden">

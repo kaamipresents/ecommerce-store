@@ -15,7 +15,9 @@ interface ProductModalProps {
 export const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
   if (!product || !isOpen) return null;
 
-  const whatsappLink = generateWhatsAppLink(product.name, product.price);
+  const currentOrigin = typeof window !== "undefined" ? window.location.origin : "";
+  const productUrl = `${currentOrigin}/products/${product.slug}`;
+  const whatsappLink = generateWhatsAppLink(product.name, product.price, productUrl);
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
